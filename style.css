@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0b0d0b;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    border-bottom: 1px solid #252a25;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span,
+h1 span,
+h2 span {
+    color: #a3e635;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #a3e635;
+}
+
+section {
+    padding: 90px 10%;
+}
+
+.inicio {
+    min-height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.subtitulo {
+    color: #a3e635;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+h1 {
+    font-size: clamp(36px, 6vw, 65px);
+    max-width: 800px;
+    line-height: 1.15;
+    margin: 20px 0;
+}
+
+section > p {
+    color: #aaaaaa;
+    max-width: 650px;
+    margin-top: 15px;
+}
+
+h2 {
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.botao {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 13px 24px;
+    background-color: #a3e635;
+    color: #0b0d0b;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.botao:hover {
+    background-color: #ffffff;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #151a15;
+    border: 1px solid #293329;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.card h3 {
+    color: #a3e635;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #aaaaaa;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid #252a25;
+    color: #888888;
+    font-size: 13px;
+}
+
+@media (max-width: 650px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section {
+        padding: 65px 7%;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+}
